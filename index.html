@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Pachucos · Taquería de barrio</title>
+<meta name="description" content="The Pachucos, taquería de barrio en Cd. Juárez. Síguenos en Instagram, TikTok y Facebook, checa el menú y cómo llegar.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Pachucos · Taquería de barrio">
+<meta property="og:description" content="Redes, menú y ubicación de The Pachucos en Cd. Juárez.">
+<meta property="og:url" content="https://blackbulldesigner.github.io/thepachucos/">
+<meta property="og:image" content="https://blackbulldesigner.github.io/thepachucos/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="canonical" href="https://blackbulldesigner.github.io/thepachucos/">
+<meta property="og:locale" content="es_MX">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" href="assets/carnal.woff" as="font" type="font/woff" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "The Pachucos",
+  "description": "Taquería de barrio",
+  "servesCuisine": "Tacos",
+  "url": "https://blackbulldesigner.github.io/thepachucos/",
+  "image": "https://blackbulldesigner.github.io/thepachucos/assets/og.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Hermanos Escobar 2598, Margaritas",
+    "addressLocality": "Ciudad Juárez",
+    "addressRegion": "Chihuahua",
+    "postalCode": "32300",
+    "addressCountry": "MX"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 31.744082370947, "longitude": -106.46081376066 },
+  "sameAs": [
+    "https://www.instagram.com/the_pachucostaqueria/",
+    "https://www.tiktok.com/@the.pachucos.taqu",
+    "https://www.facebook.com/profile.php?id=100071055484150"
+  ]
+}
+</script>
+<style>
+@font-face {
+  font-family: "Carnal";
+  src: url("assets/carnal.woff") format("woff");
+  font-display: swap;
+}
+:root {
+  --ink: #0d0d0d;
+  --paper: #ffffff;
+  --soft: #f4f2ee;
+  --muted: #5d5d5d;
+  --dots: #b9b9b9;
+  --rule: #e2e0dc;
+  --radius: 14px;
+  --display: "Carnal", "Bebas Neue", Impact, sans-serif;
+  --label: "Bebas Neue", "Arial Narrow", sans-serif;
+  --text: "Montserrat", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 500 16px/1.45 var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; }
+.wrap { width: min(100%, 620px); margin: 0 auto; padding: 0 18px; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+
+/* ---------- portada + redes ---------- */
+.hero { padding: max(18px, env(safe-area-inset-top)) 0 4px; text-align: center; }
+.hero .logo { width: min(68vw, 300px); margin: 0 auto; }
+.title {
+  font-family: var(--display);
+  font-weight: 400;
+  letter-spacing: .08em;
+  line-height: 1;
+  margin: 0;
+  display: flex; align-items: center; justify-content: center; gap: .45em;
+}
+.title svg { width: .42em; height: .42em; flex: none; }
+.social .title { font-size: clamp(30px, 8.5vw, 40px); margin: 6px 0 14px; }
+.social ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.btn-social {
+  display: flex; align-items: center; gap: 14px;
+  min-height: 64px; padding: 10px 16px 10px 10px;
+  background: var(--ink); color: #fff; text-decoration: none;
+  border-radius: var(--radius);
+  box-shadow: 0 1px 0 rgba(0,0,0,.04), 0 6px 18px -10px rgba(0,0,0,.55);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn-social:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -12px rgba(0,0,0,.6); }
+.btn-social:active { transform: translateY(0); }
+.btn-social .ico {
+  width: 44px; height: 44px; flex: none; border-radius: 11px;
+  background: #fff; color: var(--ink);
+  display: grid; place-items: center;
+}
+.btn-social .ico svg { width: 24px; height: 24px; fill: currentColor; }
+.btn-social .txt { display: grid; line-height: 1.2; min-width: 0; }
+.btn-social b { font-weight: 700; font-size: 17px; }
+.btn-social small { font-size: 13.5px; color: #cfcfcf; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.btn-social .go { margin-left: auto; width: 20px; height: 20px; stroke: #fff; fill: none; stroke-width: 2.4; flex: none; opacity: .8; }
+
+.quick { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0 6px; }
+.btn-line {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 50px; padding: 0 14px;
+  border: 2px solid var(--ink); border-radius: var(--radius);
+  font-weight: 700; font-size: 15px; text-decoration: none; color: var(--ink); background: var(--paper);
+  transition: background .15s ease, color .15s ease;
+}
+.btn-line svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.2; }
+.btn-line:hover { background: var(--ink); color: #fff; }
+.btn-solid { background: var(--ink); color: #fff; }
+.btn-solid:hover { background: #2a2a2a; }
+
+/* ---------- secciones ---------- */
+section.block { padding: 34px 0 6px; scroll-margin-top: 8px; }
+.block > .title { font-size: clamp(34px, 10vw, 46px); margin-bottom: 18px; }
+
+/* pestañas */
+.tabs {
+  position: sticky; top: 0; z-index: 5;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 6px;
+  padding: 8px 0; margin-bottom: 14px;
+  background: linear-gradient(var(--paper) 80%, rgba(255,255,255,0));
+}
+.tab {
+  appearance: none; border: 2px solid var(--ink); background: var(--paper); color: var(--ink);
+  font: 400 22px/1 var(--label); letter-spacing: .08em;
+  min-height: 48px; border-radius: 12px; cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+}
+.tab[aria-selected="true"] { background: var(--ink); color: #fff; }
+[role="tabpanel"][hidden] { display: none; }
+
+/* bandas negras, como en el menú impreso */
+.band {
+  display: flex; align-items: center; gap: 10px;
+  background: var(--ink); color: #fff;
+  padding: 10px 14px 8px; border-radius: 10px;
+  margin: 26px 0 6px;
+}
+.band:first-child { margin-top: 4px; }
+.band h3 { font: 400 28px/1 var(--label); letter-spacing: .05em; margin: 0; }
+.band .spark { width: 13px; height: 13px; fill: #fff; flex: none; }
+.band .solo { font: 400 15px/1 var(--label); letter-spacing: .1em; opacity: .9; }
+.band .solo { margin-left: auto; display: flex; align-items: baseline; gap: 6px; }
+.band .solo b { font: 600 19px/1 var(--text); letter-spacing: 0; opacity: 1; }
+
+/* renglones con puntitos */
+.list { list-style: none; margin: 0; padding: 0; --pc: 64px; }
+.row { display: grid; grid-template-columns: 1fr auto; align-items: baseline; column-gap: 6px; padding: 9px 0; }
+.list.three .row { grid-template-columns: 1fr repeat(3, var(--pc)); column-gap: 0; }
+.colhead { display: grid; grid-template-columns: 1fr repeat(3, var(--pc)); padding: 6px 0 0;
+  font: 400 15px/1 var(--label); letter-spacing: .08em; color: var(--muted); text-align: right; }
+.name { display: flex; align-items: baseline; gap: 8px; min-width: 0; font-size: 17px; }
+.name::after { content: ""; flex: 1 1 18px; min-width: 18px; border-bottom: 2.5px dotted var(--dots); transform: translateY(-.28em); }
+.name em { font-style: normal; font-size: 13.5px; color: var(--muted); white-space: nowrap; }
+.sub { grid-column: 1 / -1; font-size: 14px; color: var(--muted); margin-top: 1px; line-height: 1.35; }
+.price { font-weight: 600; font-size: 17px; text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.price.na { color: #c4c4c4; font-weight: 500; }
+.duo { display: grid; justify-items: end; gap: 1px; }
+.duo span { display: flex; align-items: baseline; gap: 6px; font-weight: 600; font-size: 17px; font-variant-numeric: tabular-nums; }
+.duo small { font-size: 12px; font-weight: 500; color: var(--muted); }
+.row.box { border: 2.5px solid var(--ink); border-radius: 12px; padding: 9px 12px; margin: 6px -12px; }
+
+.extras { list-style: none; padding: 0; margin: 10px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.extras li { background: var(--soft); border-radius: 10px; padding: 10px 12px; font-size: 15px; }
+.legal { font: 400 14px/1.3 var(--label); letter-spacing: .1em; color: var(--muted); text-align: center; margin: 22px 0 0; }
+.print { margin: 22px 0 0; padding: 14px 16px; background: var(--soft); border-radius: var(--radius); font-size: 14px; text-align: center; }
+.print a { font-weight: 700; }
+
+/* ---------- ubicación ---------- */
+.place { display: flex; gap: 12px; align-items: flex-start; font-style: normal; font-size: 16px; line-height: 1.5; margin-bottom: 14px; }
+.place svg { width: 26px; height: 26px; flex: none; margin-top: 2px; }
+.place strong { font-weight: 700; }
+.map { border: 2.5px solid var(--ink); border-radius: var(--radius); overflow: hidden; aspect-ratio: 4 / 3; background: var(--soft); }
+.map iframe { width: 100%; height: 100%; border: 0; display: block; }
+.go-btns { display: grid; grid-template-columns: 1.4fr 1fr; gap: 10px; margin-top: 12px; }
+
+/* ---------- pie ---------- */
+footer { background: var(--ink); color: #fff; margin-top: 46px; padding: 34px 0 max(30px, env(safe-area-inset-bottom)); text-align: center; }
+footer .logo { width: 170px; margin: 0 auto 18px; }
+.foot-social { display: flex; justify-content: center; gap: 12px; margin: 0 0 18px; padding: 0; list-style: none; }
+.foot-social a { width: 46px; height: 46px; border-radius: 50%; border: 2px solid #fff; display: grid; place-items: center; transition: background .15s ease, color .15s ease; }
+.foot-social a:hover { background: #fff; color: var(--ink); }
+.foot-social svg { width: 20px; height: 20px; fill: currentColor; }
+footer p { margin: 6px 0 0; font-size: 13px; color: #bdbdbd; }
+footer .legal { color: #9a9a9a; }
+
+/* entrada suave */
+@media (prefers-reduced-motion: no-preference) {
+  .hero .logo, .social .title, .social li, .quick { animation: up .55s cubic-bezier(.2,.7,.2,1) both; }
+  .social .title { animation-delay: .06s; }
+  .social li:nth-child(1) { animation-delay: .1s; }
+  .social li:nth-child(2) { animation-delay: .16s; }
+  .social li:nth-child(3) { animation-delay: .22s; }
+  .quick { animation-delay: .28s; }
+  @keyframes up { from { transform: translateY(10px); } to { transform: none; } }  /* sin opacidad: nunca esconde los botones */
+}
+@media (max-width: 380px) {
+  .list.three { --pc: 58px; }
+  .name, .price, .duo span { font-size: 16px; }
+  .band h3 { font-size: 25px; }
+}
+@media (min-width: 700px) {
+  body { background: var(--soft); }
+  main.wrap { background: var(--paper); padding: 0 34px 10px; margin-top: 28px; border-radius: 22px; box-shadow: 0 20px 60px -40px rgba(0,0,0,.45); }
+  .hero { padding-top: 30px; }
+  footer { margin-top: 40px; }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Íconos de marcas: Simple Icons (CC0) -->
+    <symbol id="i-ig" viewBox="0 0 24 24"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></symbol>
+    <symbol id="i-tt" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></symbol>
+    <!-- Destello de 4 puntas de la marca -->
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 0C12.9 8 16 11.1 24 12C16 12.9 12.9 16 12 24C11.1 16 8 12.9 0 12C8 11.1 11.1 8 12 0Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M5 6h14M5 12h14M5 18h9" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<main class="wrap">
+  <header class="hero">
+    <picture>
+      <source srcset="assets/logo.webp" type="image/webp">
+      <img class="logo" src="assets/logo.png" width="760" height="574" alt="The Pachucos · Taquería de barrio">
+    </picture>
+  </header>
+
+  <!-- 1. Redes: lo primero que se ve al escanear el QR -->
+  <section class="social" aria-labelledby="t-redes">
+    <h1 class="title" id="t-redes">
+      <svg aria-hidden="true"><use href="#i-spark"/></svg>SÍGUENOS<svg aria-hidden="true"><use href="#i-spark"/></svg>
+    </h1>
+    <ul>
+      <li>
+        <a class="btn-social" href="https://www.instagram.com/the_pachucostaqueria/" target="_blank" rel="noopener">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-ig"/></svg></span>
+          <span class="txt"><b>Instagram</b><small>@the_pachucostaqueria</small></span>
+          <svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </li>
+      <li>
+        <a class="btn-social" href="https://www.tiktok.com/@the.pachucos.taqu" target="_blank" rel="noopener">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-tt"/></svg></span>
+          <span class="txt"><b>TikTok</b><small>@the.pachucos.taqu</small></span>
+          <svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </li>
+      <li>
+        <a class="btn-social" href="https://www.facebook.com/profile.php?id=100071055484150" target="_blank" rel="noopener">
+          <span class="ico"><svg aria-hidden="true"><use href="#i-fb"/></svg></span>
+          <span class="txt"><b>Facebook</b><small>The Pachucos</small></span>
+          <svg class="go" aria-hidden="true"><use href="#i-arrow"/></svg>
+        </a>
+      </li>
+    </ul>
+    <nav class="quick" aria-label="Ir a">
+      <a class="btn-line" href="#menu"><svg aria-hidden="true"><use href="#i-menu"/></svg>Ver menú</a>
+      <a class="btn-line" href="#ubicacion"><svg aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar</a>
+    </nav>
+  </section>
+
+  <!-- 2. Menú -->
+  <section class="block" id="menu" aria-labelledby="t-menu">
+    <h2 class="title" id="t-menu">
+      <svg aria-hidden="true"><use href="#i-spark"/></svg>MENÚ<svg aria-hidden="true"><use href="#i-spark"/></svg>
+    </h2>
+
+    <div class="tabs" role="tablist" aria-label="Menú">
+      <button class="tab" role="tab" id="tab-comida" aria-controls="p-comida" aria-selected="true">Comida</button>
+      <button class="tab" role="tab" id="tab-bebidas" aria-controls="p-bebidas" aria-selected="false" tabindex="-1">Bebidas</button>
+    </div>
+
+    <!-- COMIDA -->
+    <div role="tabpanel" id="p-comida" aria-labelledby="tab-comida">
+      <div class="band">
+        <h3>Al carbón</h3><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>
+      </div>
+      <ul class="list three">
+        <li class="colhead" aria-hidden="true"><span></span><span>Orden</span><span>Media</span><span>Montado</span></li>
+        <li class="row"><span class="name">Costilla norteña</span><span class="price">$128</span><span class="price">$75</span><span class="price">$158</span></li>
+        <li class="row"><span class="name">Sirloin</span><span class="price">$158</span><span class="price">$92</span><span class="price">$184</span></li>
+        <li class="row"><span class="name">Arrachera</span><span class="price">$188</span><span class="price">$98</span><span class="price">$218</span></li>
+      </ul>
+
+      <div class="band">
+        <h3>Sin culpa</h3><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>
+      </div>
+      <ul class="list three">
+        <li class="colhead" aria-hidden="true"><span></span><span>Orden</span><span>Media</span><span>Montado</span></li>
+        <li class="row"><span class="name">Champiñón</span><span class="price">$78</span><span class="price">$45</span><span class="price">$118</span></li>
+        <li class="row"><span class="name">Nopal</span><span class="price">$78</span><span class="price">$45</span><span class="price">$118</span><span class="sub">Con queso</span></li>
+        <li class="row"><span class="name">Jamaica</span><span class="price">$78</span><span class="price">$45</span><span class="price">$118</span><span class="sub">Con queso</span></li>
+      </ul>
+
+      <div class="band">
+        <h3>Los de batalla</h3><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>
+      </div>
+      <ul class="list three">
+        <li class="colhead" aria-hidden="true"><span></span><span>Orden</span><span>Media</span><span>Montado</span></li>
+        <li class="row"><span class="name">Tripitas</span><span class="price">$158</span><span class="price">$92</span><span class="price">$184</span></li>
+        <li class="row"><span class="name">Buche</span><span class="price">$118</span><span class="price">$70</span><span class="price">$148</span></li>
+        <li class="row"><span class="name">Pastor</span><span class="price">$108</span><span class="price">$60</span><span class="price">$138</span></li>
+        <li class="row"><span class="name">Chorizo</span><span class="price">$68</span><span class="price">$45</span><span class="price">$118</span></li>
+        <li class="row"><span class="name">Campechanos</span><span class="price">$188</span><span class="price">$98</span><span class="price">$218</span></li>
+        <li class="row"><span class="name">Quesadilla</span><span class="price na" aria-label="No aplica">—</span><span class="price na" aria-label="No aplica">—</span><span class="price">$58</span></li>
+      </ul>
+
+      <div class="band">
+        <h3>Extras</h3><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>
+        <span class="solo">Porción <b>$29</b></span>
+      </div>
+      <ul class="extras">
+        <li>Costra de queso</li>
+        <li>Totopos</li>
+        <li>Aguacate</li>
+        <li>Queso encima</li>
+        <li>Cebollas asadas</li>
+        <li>Chiles toreados</li>
+        <li>Salchicha asada</li>
+      </ul>
+    </div>
+
+    <!-- BEBIDAS -->
+    <div role="tabpanel" id="p-bebidas" aria-labelledby="tab-bebidas" hidden>
+      <div class="band"><h3>Cheves</h3><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg></div>
+      <ul class="list">
+        <li class="row"><span class="name">Caguama</span><span class="price">$85</span><span class="sub">Carta Blanca</span></li>
+        <li class="row"><span class="name">Caguamita</span><span class="price">$35</span><span class="sub">Carta Blanca</span></li>
+        <li class="row"><span class="name">Caguama</span><span class="price">$95</span><span class="sub">Miller High Life</span></li>
+        <li class="row"><span class="name">Modelo Especial</span><span class="price">$59</span></li>
+        <li class="row"><span class="name">Michelob Ultra</span><span class="price">$45</span></li>
+        <li class="row"><span class="name">Bud Light</span><span class="price">$25</span><span class="sub">Lata</span></li>
+        <li class="row"><span class="name">Ampolletas <em>Cuarto 255 ml</em></span><span class="price">$25</span><span class="sub">Tecate Light · Tecate Roja · XX Lager · Indio</span></li>
+        <li class="row box"><span class="name">Cubeta</span><span class="price">$200</span><span class="sub">10 ampolletas</span></li>
+      </ul>
+
+      <div class="band"><h3>Tarros chidos</h3><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg></div>
+      <ul class="list">
+        <li class="row"><span class="name">Tarro cubano</span><span class="price">$24</span></li>
+        <li class="row"><span class="name">Tarro michelado</span><span class="price">$19</span></li>
+        <li class="row"><span class="name">Tarro colorina</span><span class="price">$28</span></li>
+        <li class="row"><span class="name">Chamuka</span><span class="price">$15</span><span class="sub">Para caguama</span></li>
+      </ul>
+
+      <div class="band"><h3>Bebidas</h3><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg></div>
+      <ul class="list">
+        <li class="row"><span class="name">Limonada</span><span class="duo"><span><small>Vaso 470 ml</small>$44</span><span><small>Litro</small>$94</span></span><span class="sub">Natural · Mineral · Rosa</span></li>
+        <li class="row"><span class="name">Agua de jamaica</span><span class="duo"><span><small>Vaso 470 ml</small>$44</span><span><small>Litro</small>$94</span></span></li>
+        <li class="row"><span class="name">Clamato</span><span class="price">$59</span><span class="sub">Tarro 470 ml</span></li>
+        <li class="row"><span class="name">Piña colada</span><span class="price">$79</span><span class="sub">Copa</span></li>
+        <li class="row"><span class="name">Soda rusa</span><span class="price">$44</span><span class="sub">470 ml</span></li>
+        <li class="row"><span class="name">Agua purificada</span><span class="price">$15</span><span class="sub">Botella 500 ml</span></li>
+      </ul>
+
+      <div class="band"><h3>Chescos</h3><svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg></div>
+      <ul class="list">
+        <li class="row"><span class="name">Coca-Cola</span><span class="price">$34</span><span class="sub">355 ml</span></li>
+        <li class="row"><span class="name">Coca-Cola Zero</span><span class="price">$34</span><span class="sub">355 ml</span></li>
+        <li class="row"><span class="name">Manzanita California</span><span class="price">$34</span><span class="sub">355 ml</span></li>
+      </ul>
+
+      <p class="legal">Prohibida la venta de bebidas alcohólicas a menores de edad · Evita el exceso</p>
+    </div>
+
+    <p class="print">¿Lo quieres ver como el menú impreso?
+      <a href="assets/menu-comida.jpg" target="_blank" rel="noopener">Comida</a> ·
+      <a href="assets/menu-bebidas.jpg" target="_blank" rel="noopener">Bebidas</a>
+    </p>
+  </section>
+
+  <!-- 3. Ubicación -->
+  <section class="block" id="ubicacion" aria-labelledby="t-ubi">
+    <h2 class="title" id="t-ubi">
+      <svg aria-hidden="true"><use href="#i-spark"/></svg>UBICACIÓN<svg aria-hidden="true"><use href="#i-spark"/></svg>
+    </h2>
+    <address class="place">
+      <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2"><use href="#i-pin"/></svg>
+      <span><strong>Av. Hermanos Escobar 2598</strong><br>Col. Margaritas, C.P. 32300<br>Cd. Juárez, Chihuahua</span>
+    </address>
+    <div class="map">
+      <iframe title="Mapa de The Pachucos" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=31.744082370947,-106.46081376066&amp;z=17&amp;hl=es&amp;output=embed"></iframe>
+    </div>
+    <div class="go-btns">
+      <a class="btn-line btn-solid" href="https://www.google.com/maps/dir/?api=1&amp;destination=31.744082370947,-106.46081376066" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#i-pin"/></svg>Cómo llegar
+      </a>
+      <a class="btn-line" href="https://waze.com/ul?ll=31.744082370947,-106.46081376066&amp;navigate=yes" target="_blank" rel="noopener">Waze</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="logo" src="assets/logo-blanco.png" width="380" height="287" alt="The Pachucos" loading="lazy">
+    <ul class="foot-social">
+      <li><a href="https://www.instagram.com/the_pachucostaqueria/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-ig"/></svg></a></li>
+      <li><a href="https://www.tiktok.com/@the.pachucos.taqu" target="_blank" rel="noopener" aria-label="TikTok"><svg aria-hidden="true"><use href="#i-tt"/></svg></a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=100071055484150" target="_blank" rel="noopener" aria-label="Facebook"><svg aria-hidden="true"><use href="#i-fb"/></svg></a></li>
+    </ul>
+    <p>Av. Hermanos Escobar 2598, Col. Margaritas, Cd. Juárez, Chih.</p>
+    <p class="legal">Prohibida la venta de bebidas alcohólicas a menores de edad · Evita el exceso</p>
+    <p>© <span id="year">2026</span> The Pachucos · Taquería de barrio</p>
+  </div>
+</footer>
+
+<script>
+  // Pestañas Comida / Bebidas (clic y flechas del teclado)
+  (function () {
+    var tabs = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+    function select(tab, focus) {
+      tabs.forEach(function (t) {
+        var on = t === tab;
+        t.setAttribute('aria-selected', on);
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+      });
+      if (focus) tab.focus();
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(t); });
+      t.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          var n = tabs[(i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length];
+          select(n, true);
+          e.preventDefault();
+        }
+      });
+    });
+    if (location.hash === '#bebidas') select(document.getElementById('tab-bebidas'));
+    var y = document.getElementById('year');
+    if (y) y.textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
